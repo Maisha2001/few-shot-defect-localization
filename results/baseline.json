@@ -1,0 +1,114 @@
+{
+  "protocol": "visa-grouped-patch-v1",
+  "archive_sha256": "2eb8690c803ab37de0324772964100169ec8ba1fa3f7e94291c9ca673f40f362",
+  "split_sha256": "a48557e6033318cb90556f706196bc9d247a776a23ea51aecee5a80dd0332995",
+  "encoder": "facebook/dinov2-small",
+  "model_revision": "ed25f3a31f01632728cabb09d1542f84ab7b0056",
+  "weight_sha256": "ae1e99fcefd534ed978cdeb8326f08030c96e28b7a81ffcbc98a857c84d14be1",
+  "input_size": 224,
+  "grid": [
+    56,
+    56
+  ],
+  "reference_products": [
+    "candle",
+    "cashew",
+    "pcb1",
+    "pcb2",
+    "pcb3",
+    "pcb4"
+  ],
+  "reference_images": {
+    "candle": 32,
+    "cashew": 32,
+    "pcb1": 32,
+    "pcb2": 32,
+    "pcb3": 32,
+    "pcb4": 32
+  },
+  "reference_patches": 3072,
+  "reserved_products": [
+    "chewinggum",
+    "fryum",
+    "pipe_fryum"
+  ],
+  "development_products": [
+    "capsules",
+    "macaroni1",
+    "macaroni2"
+  ],
+  "cross_split_near_matches": 0,
+  "pooled": {
+    "images": 560,
+    "anomalous_images": 300,
+    "native_pixels": 840000000,
+    "defect_pixels": 1012410,
+    "image": {
+      "auroc": 0.5481153846153847,
+      "average_precision": 0.6160933149200016
+    },
+    "pixel": {
+      "auroc": 0.9113078294954788,
+      "average_precision": 0.015020692099736608
+    }
+  },
+  "by_product": {
+    "capsules": {
+      "images": 160,
+      "anomalous_images": 100,
+      "native_pixels": 240000000,
+      "defect_pixels": 816344,
+      "image": {
+        "auroc": 0.6053333333333333,
+        "average_precision": 0.7369243825645667
+      },
+      "pixel": {
+        "auroc": 0.8283129816155155,
+        "average_precision": 0.017731654910417057
+      }
+    },
+    "macaroni1": {
+      "images": 200,
+      "anomalous_images": 100,
+      "native_pixels": 300000000,
+      "defect_pixels": 108714,
+      "image": {
+        "auroc": 0.4975,
+        "average_precision": 0.49253898840176835
+      },
+      "pixel": {
+        "auroc": 0.8396101574239752,
+        "average_precision": 0.0014594666741223126
+      }
+    },
+    "macaroni2": {
+      "images": 200,
+      "anomalous_images": 100,
+      "native_pixels": 300000000,
+      "defect_pixels": 87352,
+      "image": {
+        "auroc": 0.45699999999999996,
+        "average_precision": 0.4685652567586899
+      },
+      "pixel": {
+        "auroc": 0.9313813320193489,
+        "average_precision": 0.002072547063335613
+      }
+    }
+  },
+  "artifacts": {
+    "samples.json": "a159528e3179d5569e9712562771f5c7c8908c09381d8555d547900c46b946ae",
+    "reference-bank.npy": "4a8771fa1afa0635f65aef135e08eb969a3ee0ec8769ecf902fd1b66d978e26d",
+    "development.npz": "3cd1088deec4ca5d805b267704b74e9bdd6a59590c19762085cf58dd2814920a"
+  },
+  "runtime": {
+    "device": "cpu",
+    "threads": 4,
+    "torch": "2.9.1+cpu",
+    "python": "3.13.13",
+    "platform": "Windows",
+    "load_and_fit_seconds": 18.690291200000047,
+    "development_seconds": 45.52016279999998,
+    "total_seconds": 65.90329460000021
+  }
+}

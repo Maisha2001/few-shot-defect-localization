@@ -1,0 +1,10 @@
+{
+  "verified_at_utc": "2026-11-25T02:45:02.369714+00:00",
+  "metric_values": 16,
+  "maximum_metric_difference": 1.1102230246251565e-16,
+  "development_masks": 300,
+  "defect_pixels": 1012410,
+  "independent_reload_images": 3,
+  "maximum_image_score_difference": 3.28921712089425e-08,
+  "seconds": 4.683818699999847
+}
