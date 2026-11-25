@@ -1,6 +1,8 @@
 # Few-Shot Industrial Defect Localization
 
-This repository currently provides a normal-reference baseline for inspecting products absent from the reference set. It builds a memory bank from frozen DINOv2 image patches and returns an anomaly score and a spatial score map for each development image.
+A [few-shot segmentation experiment](docs/adaptation.md) compares active and random annotation selection across four budgets. With 32 source reviews and eight calibration reviews, random selection reached 19.33% pixel average precision on three unseen products. Active selection reached 3.98% at the same cost.
+
+The first experiment provides a normal-reference baseline for inspecting products absent from the reference set. It builds a memory bank from frozen DINOv2 image patches and returns an anomaly score and a spatial score map for each development image.
 
 ## Development results
 
