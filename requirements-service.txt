@@ -1,0 +1,7 @@
+-r requirements.txt
+onnx==1.19.1
+onnxruntime==1.23.2
+fastapi==0.121.3
+uvicorn==0.38.0
+httpx==0.28.1
+pydantic==2.12.4

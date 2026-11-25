@@ -1,0 +1,144 @@
+{
+  "protocol": "visa-inspection-service-v1",
+  "summary": {
+    "development_images": 48,
+    "heads": 2,
+    "checked_heatmap_cells": 301056,
+    "max_absolute_vs_eager": {
+      "score": 2.652406692504883e-06,
+      "probability": 9.5367431640625e-06
+    },
+    "max_absolute_vs_saved": {
+      "score": 2.562999725341797e-06,
+      "probability": 9.417533874511719e-06
+    },
+    "threshold_cell_disagreements": 0,
+    "max_http_absolute_difference": 0.0,
+    "eager_cpu": {
+      "n": 48,
+      "p50_ms": 65.3008500003125,
+      "p95_ms": 70.69517999962045
+    },
+    "onnx_cpu": {
+      "n": 48,
+      "p50_ms": 48.16679999930784,
+      "p95_ms": 50.983760000235634
+    },
+    "http": {
+      "serial_new": {
+        "n": 24,
+        "p50_ms": 210.03419999942707,
+        "p95_ms": 229.9490649996187,
+        "requests_per_second": 4.691018263698157
+      },
+      "cached": {
+        "n": 24,
+        "p50_ms": 7.309950000490062,
+        "p95_ms": 8.894165000037901,
+        "requests_per_second": 132.43213267087128
+      },
+      "four_clients_new": {
+        "n": 24,
+        "p50_ms": 260.7517000005828,
+        "p95_ms": 299.01898500102106,
+        "requests_per_second": 14.776932961359083
+      }
+    }
+  },
+  "explicit_absolute_tolerance": 2e-05,
+  "onnx_sha256": "9407960fc0e7bfb213da12bb4e38fe4d7c906ee04524bc201d100f5b48e488e5",
+  "export_manifest": {
+    "schema": 1,
+    "encoder_revision": "ed25f3a31f01632728cabb09d1542f84ab7b0056",
+    "opset": 17,
+    "graph_sha256": "9407960fc0e7bfb213da12bb4e38fe4d7c906ee04524bc201d100f5b48e488e5",
+    "report_sha256": "44ea7d567a19ead0fa4c7efd30e808281938189a1880b41bbfeb4054dc0b0a72",
+    "arms": [
+      "random-32",
+      "active-32"
+    ],
+    "heads": {
+      "random-32": {
+        "sha256": "eb01adb0e9faee0b650e77d8c5e524601c01bb80cd7e0aa27e6559a48d24cba6",
+        "threshold": 0.3312790095806122
+      },
+      "active-32": {
+        "sha256": "8d14625a84f0fd3bb482d0aada1a4741c2618be5e48b5bff76446994318eaaaf",
+        "threshold": 0.19417378306388855
+      }
+    }
+  },
+  "test_receipts": {
+    "unique_cases": 48,
+    "annotation_revisions_after_restart": 1,
+    "pending_after_restart": 47
+  },
+  "selected_indices": [
+    251,
+    145,
+    499,
+    135,
+    172,
+    287,
+    541,
+    150,
+    493,
+    502,
+    85,
+    526,
+    492,
+    207,
+    512,
+    63,
+    267,
+    288,
+    116,
+    18,
+    286,
+    137,
+    173,
+    360,
+    21,
+    224,
+    250,
+    554,
+    415,
+    551,
+    407,
+    125,
+    389,
+    534,
+    270,
+    232,
+    220,
+    43,
+    124,
+    119,
+    449,
+    406,
+    96,
+    198,
+    405,
+    383,
+    55,
+    453
+  ],
+  "threads": 4,
+  "audit": {
+    "persisted_cases": 48,
+    "stored_heatmap_cells": 150528,
+    "max_difference_vs_saved": 9.417533874511719e-06,
+    "threshold_disagreements": 0,
+    "sqlite_integrity": "ok",
+    "authored_review_revisions": 1,
+    "verified_at_utc": "2026-11-25T23:07:15.904747+00:00"
+  },
+  "compute_measurements": {
+    "benchmark": {
+      "exit_code": 0,
+      "elapsed_seconds": 21.003711500001373,
+      "peak_sampled_process_tree_rss_bytes": 1071783936,
+      "finished_at_utc": "2026-11-25T23:06:34.676169+00:00"
+    }
+  }
+}
