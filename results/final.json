@@ -1,0 +1,298 @@
+{
+  "protocol": "visa-cross-product-v1",
+  "primary": "active-32",
+  "protocol_sha256": "860c31dba3d92686525268c9859cc307102cebb22b052e3d494f5a61870ef6c6",
+  "spec_sha256": "e4b883dfaef878f0bbd47587c956351a3b445deeafdb47a323e8049561e65925",
+  "source_graph_sha256": "9407960fc0e7bfb213da12bb4e38fe4d7c906ee04524bc201d100f5b48e488e5",
+  "predictions": {
+    "frozen_at_utc": "2026-11-27T01:07:13.633035+00:00",
+    "protocol_sha256": "860c31dba3d92686525268c9859cc307102cebb22b052e3d494f5a61870ef6c6",
+    "files": {
+      "outputs.npz": "f1ae94cebf039d81a0e9cc823963cd1581b778a5a9112f81a1bb7bae06af65dc",
+      "order.json": "10305469d3d762b14d1dd2631502c1ddfeb3d4166290c74c76b7233cc771eccb"
+    },
+    "earlier_images_checked": 1000,
+    "near_matches": 0,
+    "images": 450,
+    "prediction_wall_seconds": 71.44576310000002
+  },
+  "targets_sha256": "7e2902c2e93b7ed8e32774b328fd30b71eb7c3d841a7b16bdb2722aa47818811",
+  "targets_opened_at_utc": "2026-11-27T01:07:17.245718+00:00",
+  "onnx_cpu_ms": {
+    "images": 450,
+    "threads": 4,
+    "median": 43.54484999998931,
+    "p95": 49.3995650000187
+  },
+  "heads": {
+    "active-32": {
+      "sha256": "8d14625a84f0fd3bb482d0aada1a4741c2618be5e48b5bff76446994318eaaaf",
+      "threshold": 0.19417378306388855
+    },
+    "random-32": {
+      "sha256": "eb01adb0e9faee0b650e77d8c5e524601c01bb80cd7e0aa27e6559a48d24cba6",
+      "threshold": 0.3312790095806122
+    }
+  },
+  "arms": {
+    "random-32": {
+      "pooled": {
+        "images": 450,
+        "anomalous_images": 300,
+        "native_pixels": 675083400,
+        "defect_pixels": 9267787,
+        "image": {
+          "auroc": 0.6360444444444444,
+          "average_precision": 0.7882947580492297
+        },
+        "pixel": {
+          "auroc": 0.9425448176146538,
+          "average_precision": 0.1972005124361858
+        },
+        "pixel_prevalence": 0.013728358599841145,
+        "pixel_brier": 0.012843635901822584,
+        "pixel_ece10": 0.011830181649321654,
+        "dice": 0.15466197285703642,
+        "predicted_positive_pixels": 1590202,
+        "true_positive_pixels": 839659,
+        "pixel_precision": 0.5280203395543459,
+        "pixel_recall": 0.09059973001105874,
+        "normal_images_with_foreground": 36,
+        "defective_images_without_overlap": 198
+      },
+      "chewinggum": {
+        "images": 150,
+        "anomalous_images": 100,
+        "native_pixels": 225053400,
+        "defect_pixels": 1271411,
+        "image": {
+          "auroc": 0.779,
+          "average_precision": 0.8960572352753546
+        },
+        "pixel": {
+          "auroc": 0.9765498094171339,
+          "average_precision": 0.5823591610855375
+        },
+        "pixel_prevalence": 0.005649374770609997,
+        "pixel_brier": 0.003285364077359641,
+        "pixel_ece10": 0.0015686340479400414,
+        "dice": 0.6011540534542341,
+        "predicted_positive_pixels": 1062623,
+        "true_positive_pixels": 701557,
+        "pixel_precision": 0.6602125118692141,
+        "pixel_recall": 0.551794030411881,
+        "normal_images_with_foreground": 7,
+        "defective_images_without_overlap": 45
+      },
+      "fryum": {
+        "images": 150,
+        "anomalous_images": 100,
+        "native_pixels": 225000000,
+        "defect_pixels": 5186101,
+        "image": {
+          "auroc": 0.5274000000000001,
+          "average_precision": 0.7285405870048252
+        },
+        "pixel": {
+          "auroc": 0.9143419911746816,
+          "average_precision": 0.13716315337286147
+        },
+        "pixel_prevalence": 0.02304933777777778,
+        "pixel_brier": 0.02291482546761231,
+        "pixel_ece10": 0.021833192930328583,
+        "dice": 0.04200029326712264,
+        "predicted_positive_pixels": 487907,
+        "true_positive_pixels": 119155,
+        "pixel_precision": 0.24421662324992263,
+        "pixel_recall": 0.022975834832372144,
+        "normal_images_with_foreground": 29,
+        "defective_images_without_overlap": 67
+      },
+      "pipe_fryum": {
+        "images": 150,
+        "anomalous_images": 100,
+        "native_pixels": 225030000,
+        "defect_pixels": 2810275,
+        "image": {
+          "auroc": 0.8841999999999999,
+          "average_precision": 0.9463588064363107
+        },
+        "pixel": {
+          "auroc": 0.9735163050965352,
+          "average_precision": 0.3404521047655755
+        },
+        "pixel_prevalence": 0.01248844598497978,
+        "pixel_brier": 0.012333054734497787,
+        "pixel_ece10": 0.012294518935605694,
+        "dice": 0.013296387617032878,
+        "predicted_positive_pixels": 39672,
+        "true_positive_pixels": 18947,
+        "pixel_precision": 0.47759124823553134,
+        "pixel_recall": 0.006742044817677985,
+        "normal_images_with_foreground": 0,
+        "defective_images_without_overlap": 86
+      }
+    },
+    "active-32": {
+      "pooled": {
+        "images": 450,
+        "anomalous_images": 300,
+        "native_pixels": 675083400,
+        "defect_pixels": 9267787,
+        "image": {
+          "auroc": 0.7063777777777778,
+          "average_precision": 0.8317855584152708
+        },
+        "pixel": {
+          "auroc": 0.9398275323498256,
+          "average_precision": 0.20851501916855208
+        },
+        "pixel_prevalence": 0.013728358599841145,
+        "pixel_brier": 0.01305279066101246,
+        "pixel_ece10": 0.011378070277287685,
+        "dice": 0.22550354144591744,
+        "predicted_positive_pixels": 10027298,
+        "true_positive_pixels": 2175555,
+        "pixel_precision": 0.21696323376446974,
+        "pixel_recall": 0.2347437419526366,
+        "normal_images_with_foreground": 50,
+        "defective_images_without_overlap": 120
+      },
+      "chewinggum": {
+        "images": 150,
+        "anomalous_images": 100,
+        "native_pixels": 225053400,
+        "defect_pixels": 1271411,
+        "image": {
+          "auroc": 0.9325999999999999,
+          "average_precision": 0.9715682656108244
+        },
+        "pixel": {
+          "auroc": 0.9851228173451754,
+          "average_precision": 0.6471991395835512
+        },
+        "pixel_prevalence": 0.005649374770609997,
+        "pixel_brier": 0.003155479315779238,
+        "pixel_ece10": 0.00171497199673248,
+        "dice": 0.6083203729030109,
+        "predicted_positive_pixels": 1862487,
+        "true_positive_pixels": 953207,
+        "pixel_precision": 0.511792565532001,
+        "pixel_recall": 0.7497237321369722,
+        "normal_images_with_foreground": 2,
+        "defective_images_without_overlap": 19
+      },
+      "fryum": {
+        "images": 150,
+        "anomalous_images": 100,
+        "native_pixels": 225000000,
+        "defect_pixels": 5186101,
+        "image": {
+          "auroc": 0.5880000000000001,
+          "average_precision": 0.7838005123819007
+        },
+        "pixel": {
+          "auroc": 0.9065772271612637,
+          "average_precision": 0.14221841255727433
+        },
+        "pixel_prevalence": 0.02304933777777778,
+        "pixel_brier": 0.02361442508337961,
+        "pixel_ece10": 0.020359552891010047,
+        "dice": 0.17992037994763596,
+        "predicted_positive_pixels": 8110047,
+        "true_positive_pixels": 1196124,
+        "pixel_precision": 0.14748669150745983,
+        "pixel_recall": 0.23064032111985477,
+        "normal_images_with_foreground": 48,
+        "defective_images_without_overlap": 20
+      },
+      "pipe_fryum": {
+        "images": 150,
+        "anomalous_images": 100,
+        "native_pixels": 225030000,
+        "defect_pixels": 2810275,
+        "image": {
+          "auroc": 0.956,
+          "average_precision": 0.9799763757245923
+        },
+        "pixel": {
+          "auroc": 0.9743482349498432,
+          "average_precision": 0.2743404530055324
+        },
+        "pixel_prevalence": 0.01248844598497978,
+        "pixel_brier": 0.012390904797219644,
+        "pixel_ece10": 0.012326208288942778,
+        "dice": 0.01830620804812779,
+        "predicted_positive_pixels": 54764,
+        "true_positive_pixels": 26224,
+        "pixel_precision": 0.4788547220801987,
+        "pixel_recall": 0.009331471119374438,
+        "normal_images_with_foreground": 0,
+        "defective_images_without_overlap": 81
+      }
+    },
+    "reference-bank": {
+      "pooled": {
+        "images": 450,
+        "anomalous_images": 300,
+        "native_pixels": 675083400,
+        "defect_pixels": 9267787,
+        "image": {
+          "auroc": 0.5253777777777778,
+          "average_precision": 0.693112429376303
+        },
+        "pixel": {
+          "auroc": 0.944034623806684,
+          "average_precision": 0.12756481678844833
+        },
+        "pixel_prevalence": 0.013728358599841145
+      },
+      "chewinggum": {
+        "images": 150,
+        "anomalous_images": 100,
+        "native_pixels": 225053400,
+        "defect_pixels": 1271411,
+        "image": {
+          "auroc": 0.6063999999999999,
+          "average_precision": 0.8061478292232336
+        },
+        "pixel": {
+          "auroc": 0.9659796163890759,
+          "average_precision": 0.41116047352765284
+        },
+        "pixel_prevalence": 0.005649374770609997
+      },
+      "fryum": {
+        "images": 150,
+        "anomalous_images": 100,
+        "native_pixels": 225000000,
+        "defect_pixels": 5186101,
+        "image": {
+          "auroc": 0.5362,
+          "average_precision": 0.712127319685762
+        },
+        "pixel": {
+          "auroc": 0.9081576797433962,
+          "average_precision": 0.11670648220119906
+        },
+        "pixel_prevalence": 0.02304933777777778
+      },
+      "pipe_fryum": {
+        "images": 150,
+        "anomalous_images": 100,
+        "native_pixels": 225030000,
+        "defect_pixels": 2810275,
+        "image": {
+          "auroc": 0.5216,
+          "average_precision": 0.7493053420509823
+        },
+        "pixel": {
+          "auroc": 0.9708190139662407,
+          "average_precision": 0.4735192444159405
+        },
+        "pixel_prevalence": 0.01248844598497978
+      }
+    }
+  },
+  "completed_at_utc": "2026-11-27T01:07:21.586794+00:00"
+}

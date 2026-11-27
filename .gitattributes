@@ -1,1 +1,5 @@
 * text=auto eol=lf
+# Trained artifacts are verified byte-for-byte against their original digests.
+models/*.json binary
+results/final.json -text whitespace=cr-at-eol
+results/final-protocol.json -text whitespace=cr-at-eol

@@ -3,6 +3,10 @@ __pycache__/
 .venv/
 data/
 models/
+!/models/
+/models/*
+!/models/active-32.json
+!/models/random-32.json
 runs/
 *.tar
 *.npz

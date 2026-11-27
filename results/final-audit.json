@@ -1,0 +1,13 @@
+{
+  "status": "passed",
+  "at_utc": "2026-11-27T01:09:56.608228+00:00",
+  "images": 450,
+  "native_mask_pixels": 675083400,
+  "original_anomaly_masks": 300,
+  "metric_groups": 12,
+  "scalar_checks": 182,
+  "maximum_absolute_difference": 2.220446049250313e-16,
+  "report_sha256": "064654231939ed8747326490ce97e9d415bf6d344390f7a25ec3f2ba2ceca638",
+  "prediction_sha256": "f1ae94cebf039d81a0e9cc823963cd1581b778a5a9112f81a1bb7bae06af65dc",
+  "protocol_sha256": "860c31dba3d92686525268c9859cc307102cebb22b052e3d494f5a61870ef6c6"
+}

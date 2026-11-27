@@ -1,0 +1,20 @@
+[
+  {
+    "title": "Capsules",
+    "file": "capsules.jpg",
+    "source": "capsules/Data/Images/Anomaly/073.JPG",
+    "sha256": "0d893a967f30bedac4ad6002562c1a654dca879f7afef9122c1ea7f465cecbe9"
+  },
+  {
+    "title": "Macaroni 1",
+    "file": "macaroni1.jpg",
+    "source": "macaroni1/Data/Images/Anomaly/000.JPG",
+    "sha256": "e7592eacf0a723ca4c571bc9dc3792d64671b5fe4832f6127974fc5582e47bb2"
+  },
+  {
+    "title": "Macaroni 2",
+    "file": "macaroni2.jpg",
+    "source": "macaroni2/Data/Images/Normal/0011.JPG",
+    "sha256": "4344de8881aa0ab6889a52f7737831dc9f99a539f481f79d7bc1426998a4eb75"
+  }
+]

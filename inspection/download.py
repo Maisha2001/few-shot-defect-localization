@@ -18,9 +18,11 @@ INPUTS = {
     "VisA.tar": ("https://amazon-visual-anomaly.s3.us-west-2.amazonaws.com/VisA_20220922.tar", ARCHIVE_SHA),
 }
 
-def fetch(directory):
+def fetch(directory, model_only=False):
     directory.mkdir(parents=True, exist_ok=True)
     for name, (url, expected) in INPUTS.items():
+        if model_only and name not in {"config.json", "model.safetensors"}:
+            continue
         dest = directory / name
         if dest.exists():
             if file_hash(dest) != expected:
@@ -45,4 +47,6 @@ def fetch(directory):
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("directory", type=Path)
-    fetch(parser.parse_args().directory)
+    parser.add_argument("--model-only", action="store_true", help="Fetch just the pinned DINOv2 encoder for the demo")
+    args = parser.parse_args()
+    fetch(args.directory, model_only=args.model_only)

@@ -15,7 +15,7 @@ Eight separate cashew images (five anomalous) calibrate the monotone sigmoid and
 
 Each row uses the same 560 development images and 840 million native pixels from capsules and the two macaroni products. The frozen normal-reference baseline achieved 1.50% pixel AP. At 32 reviews, pixel Brier scores were 0.001079 for random and 0.001203 for active. For context, always predicting background gives 0.001205 on this set. Sparse foreground makes small calibration errors easy to miss in aggregate. The [full results](../results/adaptation.json) include per-product scores, 10-bin calibration error, thresholded Dice, selected indices, timing and artifact hashes. Pooled scores can differ substantially from within-product scores.
 
-All eight heads and per-image outputs were saved before aggregating development metrics. The designated active-32 head was specified in the experiment code. The budget comparison uses one selection order and one calibration product. The budget counts images, not annotation minutes. Product shift, sparse flaws and coarse heatmaps limit transfer. Chewing gum, fryum and pipe fryum remain reserved.
+All eight heads and per-image outputs were saved before aggregating development metrics. The designated active-32 head was specified in the experiment code. The budget comparison uses one selection order and one calibration product. The budget counts images, not annotation minutes. Product shift, sparse flaws and coarse heatmaps limit transfer. Chewing gum, fryum and pipe fryum were reserved for the [final cross-product evaluation](cross-product.md).
 
 ## Reproduce
 

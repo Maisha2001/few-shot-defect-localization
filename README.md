@@ -1,5 +1,9 @@
 # Few-Shot Industrial Defect Localization
 
+[Run the inspection desk](docs/inspection-desk.md) to compare two model overlays on industrial images, paint defect masks and export a versioned review history. The local demo includes three VisA development images and accepts JPEG or PNG uploads.
+
+On **450 images from three held-out products**, the active and random models reached **20.85% and 19.72% pixel average precision**, respectively. The normal-reference baseline reached 12.76%. At its frozen threshold the active model detected only 0.93% of pipe-fryum defect pixels. The two-head model took 49.4 ms p95 per preprocessed image on four CPU threads. [Cross-product evaluation, per-product results and limitations](docs/cross-product.md)
+
 The [local inspection API](docs/service.md) returns a defect probability map for an uploaded image, queues uncertain cases and keeps a revision history of human annotations. Model versions cover both 32-review segmentation heads. On 48 development images, the ONNX export agreed with the original models on every thresholded grid cell.
 
 A [few-shot segmentation experiment](docs/adaptation.md) compares active and random annotation selection across four budgets. With 32 source reviews and eight calibration reviews, random selection reached 19.33% pixel average precision on three unseen products. Active selection reached 3.98% at the same cost.

@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' blob:; connect-src 'self'; script-src 'self'; style-src 'self'; base-uri 'none'; form-action 'self'">
+<title>Inspection desk</title><link rel="stylesheet" href="style.css"><script defer src="desk.js"></script></head>
+<body><header><div class="wordmark"><span aria-hidden="true">▦</span> Inspection desk</div><span id="connection">Disconnected</span></header>
+<main><form id="connect"><label for="key">Local access key</label><input id="key" type="password" autocomplete="off" required><button>Connect</button></form>
+<fieldset id="desk" disabled><div class="bar"><label>Development sample <select id="sample"></select></label><button id="open">Inspect sample</button><label class="file">Upload image<input type="file" id="upload" accept="image/jpeg,image/png"></label></div>
+<div class="layout"><section><div class="title"><h1 id="name">Image inspection</h1><label><input type="checkbox" id="overlay" checked> Model overlay</label></div>
+<div class="panes"><figure><figcaption>Active selection <strong id="active-read">—</strong></figcaption><canvas id="active" width="560" height="400" aria-label="Active selection image and defect overlay"></canvas></figure>
+<figure><figcaption>Random selection <strong id="random-read">—</strong></figcaption><canvas id="random" width="560" height="400" aria-label="Random selection image and defect overlay"></canvas></figure></div>
+<p class="legend"><i></i> Model foreground <i></i> Your annotation</p>
+<div class="editor"><h2>Annotation</h2><label>Review model <select id="arm"><option value="active-32">Active · 32 reviews</option><option value="random-32">Random · 32 reviews</option></select></label>
+<label>Tool <select id="tool"><option value="paint">Paint cells</option><option value="erase">Erase cells</option></select></label>
+<button id="clear">Clear mask</button><button id="save">Save review</button><span id="revision"></span></div>
+<p class="hint">Draw on the selected model’s image. Saving an empty mask records a normal review.</p>
+</section><aside><h2>Review queue</h2><p>Unreviewed predictions nearest their model threshold.</p><div id="queue"></div>
+<button id="export">Export reviews</button></aside></div></fieldset>
+<p id="status" role="status" aria-live="polite">Enter the access key from the local server.</p>
+</main></body></html>

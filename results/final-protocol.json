@@ -1,0 +1,50 @@
+{
+  "frozen_at_utc": "2026-11-27T01:05:57.656230+00:00",
+  "spec": {
+    "schema": 1,
+    "protocol": "visa-cross-product-v1",
+    "products": [
+      "chewinggum",
+      "fryum",
+      "pipe_fryum"
+    ],
+    "population": "Every official one-class test row for the three reserved products, including all normal images. No outcome-dependent exclusions. Product families are disjoint from source and development. Order by SHA-256 of the image path.",
+    "primary": "active-32",
+    "selection": "Preserve the deployment arm fixed by the adaptation experiment. Report random-32 at the same budget and the frozen normal-reference bank regardless of ordering.",
+    "comparators": [
+      "random-32",
+      "reference-bank"
+    ],
+    "graph_sha256": "9407960fc0e7bfb213da12bb4e38fe4d7c906ee04524bc201d100f5b48e488e5",
+    "heads": {
+      "active-32": {
+        "sha256": "8d14625a84f0fd3bb482d0aada1a4741c2618be5e48b5bff76446994318eaaaf",
+        "threshold": 0.19417378306388855
+      },
+      "random-32": {
+        "sha256": "eb01adb0e9faee0b650e77d8c5e524601c01bb80cd7e0aa27e6559a48d24cba6",
+        "threshold": 0.3312790095806122
+      }
+    },
+    "bank_sha256": "4a8771fa1afa0635f65aef135e08eb969a3ee0ec8769ecf902fd1b66d978e26d",
+    "leakage_check": "Compare final images to all images used in the reference bank, acquisition pool, calibration and development roles. Stop on a difference hash within four bits and grayscale thumbnail RMS at most three. No removal or retraining.",
+    "predictions": "Use the immutable exported CPU graph for both segmentation arms and the original DINOv2 plus reference bank for the distance baseline. Save scores, maps, order and dimensions before decoding any final masks or aggregating outcomes. Input paths encode source labels but labels and paths are not inference inputs.",
+    "metrics": "Primary endpoint is native-pixel average precision pooled across all cases. Also report pooled and per-product image and pixel AUROC/AP, pixel prevalence, and calibrated-head Dice, pixel recall, precision, Brier, ten-bin equal-width ECE, normal images with any predicted foreground and anomalous images with no correctly localized pixel. Fixed >= thresholds. Undefined ratios are null. Baseline supplies ranking scores only.",
+    "timing": "Measure CPU wall time for the two-head ONNX session per single preprocessed image, including first call; report median and p95. Report the existing separate HTTP timing with its scope. No latency target.",
+    "interpretation": "Descriptive benchmark with one acquisition order and three product groups. No significance, factory operating guarantee, or post-holdout model, threshold or exclusion changes. Demo and annotations use other images."
+  },
+  "spec_sha256": "e4b883dfaef878f0bbd47587c956351a3b445deeafdb47a323e8049561e65925",
+  "implementation": {
+    "adapt.py": "89a2b2af6265e8d64c4248e210c338ff569d5885165d8fc4755f79cce757d206",
+    "data.py": "6f9b24984eb01bf172208775b40b80961c913c8edc372f740815fafd62bafd9f",
+    "evaluate.py": "7e01945c3264ccb7c0acaa2052d470d4814d785dfd2769fe3851dbc844aa4b92",
+    "experiment.py": "f4db187e371e6d22c30599ccf933da47bb400aeb9b59390d6de2b3b8c0009405",
+    "export.py": "01fbff7f0e2c90db19ae0db7a67822beb393774c1680ce8be48e8b7537a4803d",
+    "final.py": "ba9a5d7a294036c5275ad15bf6fa7f279ad68c794c6907d0aff76a93cdec53f3",
+    "metrics.py": "e819e0f140dfb16c0013b3fcff9e69691cf69bde9c2a53804f361ea3d1a2eef1",
+    "model.py": "7f170018bf646c2576566f7c6b1d0deb5ecb9a5951582bec8e7e5aa9e4ea3adb",
+    "verify.py": "c6c3eed16150b2a9b419ee07e2b9285620e1971655507147f636c98a7bd2f0c6"
+  },
+  "archive_sha256": "2eb8690c803ab37de0324772964100169ec8ba1fa3f7e94291c9ca673f40f362",
+  "split_sha256": "a48557e6033318cb90556f706196bc9d247a776a23ea51aecee5a80dd0332995"
+}
